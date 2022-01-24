@@ -85,10 +85,12 @@ function App() {
         <button onClick={() => {
           try {
             //analyze_basic(text)
-            axios.get(`localhost:5000/`).then((response) => {
+            /*axios.get(`localhost:5000/`).then((response) => {
               console.log(response.data)
               play(response.data?.response)
-            })
+            })*/
+
+            play(text)
           } catch (e) {
             console.log(play("On my. " + e))
           }
